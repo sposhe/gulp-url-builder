@@ -8,9 +8,5 @@ const urlbuilder = (path) => {
 }
 
 module.exports = () => {
-<<<<<<< HEAD
-  return rename(prettyUrl);
-=======
   return rename(urlbuilder);
->>>>>>> 2fcb94c... Add index.js
 };
