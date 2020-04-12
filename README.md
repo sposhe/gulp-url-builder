@@ -19,15 +19,15 @@ The package automatically outputs every file as an `index.*` file inside a direc
 ## Example
 
 ```javascript
-const gulp       = require('gulp')
-const pug        = require('gulp-pug')
+const gulp = require('gulp')
+const pug = require('gulp-pug')
 const urlBuilder = require('gulp-url-builder')
 
 gulp.task('pug', () => {
   return gulp.src([
     'src/pug/views/**/*.pug'
-  ]).pipe( pug()             )
-    .pipe( urlBuilder()      )
+  ]).pipe( pug() )
+    .pipe( urlBuilder() )
     .pipe( gulp.dest('dest') )
 })
 ```
